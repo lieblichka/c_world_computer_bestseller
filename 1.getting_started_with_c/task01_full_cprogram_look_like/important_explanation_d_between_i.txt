@@ -1,0 +1,32 @@
+// C program to demonstrate the difference
+// between %i and %d specifier
+#include <stdio.h>
+ 
+int main()
+{
+    int a, b, c;
+ 
+    printf("Enter value of a in decimal format:");
+    scanf("%d", &a);
+ 
+    printf("Enter value of b in octal format: ");
+    scanf("%i", &b);
+ 
+    printf("Enter value of c in hexadecimal format: ");
+    scanf("%i", &c);
+ 
+    printf("a = %i, b = %i, c = %i", a, b, c);
+ 
+    return 0;
+}
+
+Введите значение a в десятичном формате: 12.
+ Введите значение b в восьмеричном формате: 012.
+ Введите значение c в шестнадцатеричном формате: 0x12.
+ а = 12, б = 10, в = 18
+
+Объяснение
+
+    Десятичное значение a как 12 равно 12.
+    Десятичное значение b как 12 (восьмеричное) равно 10.
+    Десятичное значение c как 12 (шестнадцатеричное) равно 18.
